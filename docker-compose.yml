@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  # 1. Database (PostgreSQL)
+  db:
+    image: postgres:14-alpine
+    container_name: aqi_db
+    restart: always
+    environment:
+      POSTGRES_DB: aqi_vietnam_db
+      POSTGRES_USER: admin1681
+      POSTGRES_PASSWORD: admin1681
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin1681 -d aqi_vietnam_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # 2. Backend (Flask API + AI Engine)
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: aqi_backend
+    restart: always
+    # Không cần ports ra ngoài vì Frontend (Nginx) sẽ gọi nội bộ
+    # ports:
+    #   - "5000:5000" 
+    dns:
+      - 8.8.8.8
+    environment:
+      DATABASE_URL: postgresql+psycopg2://admin1681:admin1681@db:5432/aqi_vietnam_db
+    depends_on:
+      db:
+        condition: service_healthy
+
+  # 3. Frontend (React + Nginx Proxy)
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: aqi_frontend
+    restart: always
+    ports:
+      - "3000:80" # Truy cập web qua localhost:3000
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:
