@@ -77,7 +77,7 @@ Mô hình AI của hệ thống được xây dựng dựa trên quy trình khoa
 ### 1. Nguồn Dữ liệu
 * **Dataset:** Dữ liệu Chất lượng Không khí Việt Nam năm 2020.
     * Nguồn dữ liệu gốc: [Vietnam Open Development Mekong](https://data.vietnam.opendevelopmentmekong.net/dataset/timelines-dataset-on-air-quality-in-vietnam)
-    * Dữ liệu trên Kaggle (sử dụng cho Notebook): [Kaggle Dataset](https://data.vietnam.opendevelopmentmekong.net/dataset/timelines-dataset-on-air-quality-in-vietnam)
+    * Dữ liệu trên Kaggle (sử dụng cho Notebook): [Kaggle Dataset](https://www.kaggle.com/datasets/ducnguyen168/dataset-on-air-quality-in-vietnam-in-2020)
 * **Định dạng:** Time-series (Chuỗi thời gian) với các chỉ số ô nhiễm hàng ngày.
 * **Các đặc trưng (Features) sử dụng:**
     * `PM2.5`: Bụi mịn (Yếu tố quan trọng nhất, trọng số ~62%).
