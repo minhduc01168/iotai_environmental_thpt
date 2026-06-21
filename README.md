@@ -6,6 +6,8 @@ Hệ thống giám sát và cảnh báo chất lượng không khí (AQI) thông
 ![Docker](https://img.shields.io/badge/Docker-Enabled-blue)
 ![Stack](https://img.shields.io/badge/Tech-React%20%7C%20Flask%20%7C%20PostgreSQL%20%7C%20Scikit--Learn-green)
 
+![Demo Sản Phẩm](images/demo.jpg)
+
 ## 📖 Giới thiệu
 
 Dự án này thu thập dữ liệu ô nhiễm không khí theo thời gian thực (PM2.5, PM10, CO, NO2, O3, SO2), lưu trữ lịch sử, và sử dụng các mô hình Machine Learning để:
