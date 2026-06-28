@@ -47,8 +47,9 @@ Dự án này thu thập dữ liệu ô nhiễm không khí theo thời gian th�
 
 ## ⚙️ Cài đặt và Chạy thử (Deployment)
 
-> 💡 **Dành riêng cho người mới bắt đầu trên hệ điều hành Windows:**
-> Xem ngay tài liệu hướng dẫn cài đặt chi tiết từng bước (hỗ trợ cả Docker tự động và cài đặt thủ công) tại 👉 [HUONG_DAN_CAI_DAT_WINDOWS.md](file:///d:/Slide_THPT/AnhKhoa_AI/iotai_environmental_thpt/HUONG_DAN_CAI_DAT_WINDOWS.md).
+> 💡 **Tài liệu hướng dẫn chi tiết từng bước dành cho người mới bắt đầu:**
+> - 🖥️ **Người dùng Windows:** Xem tại 👉 [HUONG_DAN_CAI_DAT_WINDOWS.md](file:///d:/Slide_THPT/AnhKhoa_AI/iotai_environmental_thpt/HUONG_DAN_CAI_DAT_WINDOWS.md)
+> - 🍏 **Người dùng macOS (MacBook/iMac):** Xem tại 👉 [HUONG_DAN_CAI_DAT_MACOS.md](file:///d:/Slide_THPT/AnhKhoa_AI/iotai_environmental_thpt/HUONG_DAN_CAI_DAT_MACOS.md)
 
 ### 1. Yêu cầu tiên quyết
 * Cài đặt [Docker Desktop](https://www.docker.com/products/docker-desktop/) (hoặc Docker Engine + Compose).
