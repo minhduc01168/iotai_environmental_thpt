@@ -37,10 +37,10 @@ export function useAQIData() {
   useEffect(() => {
     fetchAllData();
 
-    // Tự động cập nhật mỗi 30 giây
+    // Tự động cập nhật mượt mà mỗi 10 giây
     const interval = setInterval(() => {
       fetchAllData();
-    }, 60000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
