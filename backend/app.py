@@ -35,7 +35,7 @@ def update_aqi_job():
                     pm25=new_iqair_data['p2'],
                     diagnosis_label=diagnosis,
                     aqi_level_label=level,
-                    timestamp=datetime.strptime(new_iqair_data['ts'][:19], '%Y-%m-%dT%H:%M:%S'),
+                    timestamp=datetime.now(),
                     city=TARGET_CITY
                 )
                 
